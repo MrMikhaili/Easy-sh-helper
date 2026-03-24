@@ -6,7 +6,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 echo "--- AUR HELPER INSTALLER ---"
 echo "1) Install yay (Go based)"
 echo "2) Install paru (Rust based)"
-read -p "Select option [1-2]: " choice
+read -p "Select option [1-2]: " choice < /dev/tty
 
 case $choice in
     1)
