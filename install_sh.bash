@@ -1,5 +1,5 @@
 #!/bin/bash
-sudo -v
+sudo -v || exit
 # Цикл для обновления прав sudo в фоне
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
